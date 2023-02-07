@@ -1,7 +1,27 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(193, 171, 142);
+  background-color: rgb(207, 191, 170);
 }
 head {
   font-family: "Courier New", Courier, monospace;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+}
+
+img {
+  opacity: 0.75;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+.center {
+  margin: auto;
+  width: 70%;
+  border: 3px solid #040404;
+  padding: 5px;
 }
