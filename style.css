@@ -6,9 +6,10 @@ body {
 .header {
   font-family: "Lusitana", serif;
   font-weight: bold;
-  padding: 5px;
+  padding: 1px;
   text-align: center;
-  border-radius: 50%;
+  grid-area: header;
+  background-color: rgb(119, 81, 81);
 }
 
 img {
@@ -20,9 +21,31 @@ img:hover {
   opacity: 0.6;
 }
 
-.center {
+main {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "article"
+    "aside"
+    "footer";
+  grid-template-rows: 60vh 10vh 30vh;
+}
+
+article {
+  grid-area: article;
+  background-color: rgb(38, 69, 69);
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+  background-color: blanchedalmond;
+}
+
+.intro {
+  background-color: rgb(132, 132, 35);
   margin: auto;
-  width: 70%;
-  border: 3px solid #aa2e2e;
-  padding: 5px;
 }
