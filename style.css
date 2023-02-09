@@ -11,9 +11,10 @@ body {
 .header {
   font-family: "Lusitana", serif;
   font-weight: bold;
-  padding: 5px;
+  padding: 1px;
   text-align: center;
-  border-radius: 50%;
+  grid-area: header;
+  background-color: rgb(119, 81, 81);
 }
 
 .grid-container {
