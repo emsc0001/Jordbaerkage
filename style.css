@@ -2,7 +2,13 @@ body {
   font-family: "Tinos", serif;
   background-color: rgb(207, 191, 170);
   font-weight: bold;
+  padding: 1px;
+  text-align: center;
+  border-radius: 100%;
+  grid-area: header;
+  background-color: rgb(126, 97, 86);
 }
+
 .header {
   font-family: "Lusitana", serif;
   font-weight: bold;
@@ -21,8 +27,46 @@ img:hover {
 }
 
 .center {
+  grid-area: as;
+  background-color: rgb(177, 150, 115);
+  border: 2px solid black;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "header" "header"
+    "article" "aside"
+    "footer" "footer";
+  grid-template-rows: 40vh 10vh 30vh;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+article {
+  grid-area: article;
+  background-color: rgb(255, 255, 255);
+  grid-template-rows: 1fr;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(255, 255, 255);
+}
+
+.intro {
+  background-color: rgb(255, 255, 255);
   margin: auto;
   width: 70%;
-  border: 3px solid #aa2e2e;
+  border: 3px solid #ffffff;
   padding: 5px;
 }
