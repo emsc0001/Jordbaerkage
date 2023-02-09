@@ -1,12 +1,11 @@
 body {
   font-family: "Tinos", serif;
-  background-color: rgb(207, 191, 170);
-  font-weight: bold;
-  padding: 1px;
-  text-align: center;
-  border-radius: 100%;
-  grid-area: header;
-  background-color: rgb(126, 97, 86);
+  background-image: url("https://images6.alphacoders.com/434/thumb-1920-434430.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  min-width: 700px;
 }
 
 .header {
@@ -17,56 +16,36 @@ body {
   border-radius: 50%;
 }
 
-img {
-  opacity: 1;
-  border-radius: 70%;
-}
-
-img:hover {
-  opacity: 0.6;
-}
-
-.center {
-  grid-area: as;
-  background-color: rgb(177, 150, 115);
-  border: 2px solid black;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-img {
-  width: 100%;
-}
-
-main {
+.grid-container {
   display: grid;
   grid-template-areas:
     "header" "header"
     "article" "aside"
     "footer" "footer";
-  grid-template-rows: 40vh 10vh 30vh;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 1fr;
+  row-gap: 1fr;
 }
 
 article {
-  grid-area: article;
-  background-color: rgb(255, 255, 255);
-  grid-template-rows: 1fr;
-}
-
-aside {
-  grid-area: aside;
+  text-align: left;
+  width: 90%;
+  font-size: 20px;
+  font: bold;
 }
 
 footer {
   grid-area: footer;
-  background-color: rgb(255, 255, 255);
 }
 
-.intro {
-  background-color: rgb(255, 255, 255);
+.side {
+  grid-area: sidebar;
+  background-color: rgb(134, 68, 68);
   margin: auto;
   width: 70%;
-  border: 3px solid #ffffff;
-  padding: 5px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  text-align: left;
+  grid-row: 2;
+  grid-column: 3 / 4;
 }
