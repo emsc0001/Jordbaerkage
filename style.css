@@ -1,20 +1,6 @@
 body {
   font-family: "Tinos", serif;
   background-image: url("https://images6.alphacoders.com/434/thumb-1920-434430.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  overflow-x: hidden;
-  min-width: 700px;
-}
-
-.header {
-  font-family: "Lusitana", serif;
-  font-weight: bold;
-  padding: 1px;
-  text-align: center;
-  grid-area: header;
-  background-color: rgb(119, 81, 81);
 }
 
 .grid-container {
@@ -23,28 +9,52 @@ body {
     "header" "header"
     "article" "aside"
     "footer" "footer";
-  grid-template-columns: 2fr 2fr;
-  column-gap: 1fr;
-  row-gap: 1fr;
 }
 
-article {
-  text-align: left;
-  width: 90%;
+.image {
+  width: 100px;
+  margin: 50px;
+  width: 300px;
+  height: 50px;
+}
+
+.header {
+  font-family: "Lusitana", serif;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 30px;
+  text-align: center;
+  grid-area: header;
+  background-color: wheat;
+}
+
+.article {
+  font-size: 22px;
+  font-family: "Lusitana", serif;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  display: table;
+  width: 100%;
+  text-align: center;
+  background-color: wheat;
   font-size: 20px;
-  font: bold;
 }
 
-footer {
-  grid-area: footer;
+.footer {
+  font-family: "Lusitana", serif;
+  display: table;
+  width: 100%;
+  text-align: center;
+  background-color: wheat;
+  font-size: 20px;
+  border: 2px solid black;
 }
 
 .side {
-  grid-area: sidebar;
-  background-color: rgb(134, 68, 68);
+  background-color: wheat;
   margin: auto;
   width: 70%;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000;
   padding: 10px;
   text-align: left;
   grid-row: 2;
